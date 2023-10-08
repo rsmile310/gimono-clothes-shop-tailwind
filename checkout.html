@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Loulia</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <section class="max-w-[1920px] mx-auto">
+            <header class="px-3 md:px-10 lg:px-16 py-6 sm:py-10 flex justify-between">
+                <div>
+                    <img class="max-w-[165px] sm:max-w-[300px] md:max-w-[400px]" width="100%"
+                        src="assets/images/logo.svg" alt="logo" />
+                </div>
+                <div class="flex items-center">
+                    <div class="mr-1 sm:mr-4">
+                        <svg class="w-[20px] sm:w-[32px]" viewBox="0 0 32 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.81985 28C8.22327 28 7.71515 27.7902 7.29548 27.3705C6.87584 26.9509 6.66602 26.4427 6.66602 25.8462V14.1538C6.66602 13.5573 6.87584 13.0491 7.29548 12.6295C7.71515 12.2098 8.22327 12 8.81985 12H10.666V9.33333C10.666 7.84787 11.1835 6.58761 12.2186 5.55257C13.2536 4.51752 14.5139 4 15.9993 4C17.4848 4 18.7451 4.51752 19.7801 5.55257C20.8152 6.58761 21.3327 7.84787 21.3327 9.33333V12H23.1788C23.7754 12 24.2835 12.2098 24.7032 12.6295C25.1229 13.0491 25.3327 13.5573 25.3327 14.1538V25.8462C25.3327 26.4427 25.1229 26.9509 24.7032 27.3705C24.2835 27.7902 23.7754 28 23.1788 28H8.81985ZM8.81985 26.6667H23.1788C23.4182 26.6667 23.6147 26.5897 23.7686 26.4359C23.9224 26.2821 23.9993 26.0855 23.9993 25.8462V14.1538C23.9993 13.9145 23.9224 13.7179 23.7686 13.5641C23.6147 13.4103 23.4182 13.3333 23.1788 13.3333H8.81985C8.58054 13.3333 8.38396 13.4103 8.23012 13.5641C8.07627 13.7179 7.99935 13.9145 7.99935 14.1538V25.8462C7.99935 26.0855 8.07627 26.2821 8.23012 26.4359C8.38396 26.5897 8.58054 26.6667 8.81985 26.6667ZM15.9993 22C16.5617 22 17.0357 21.8073 17.4211 21.4218C17.8066 21.0363 17.9993 20.5624 17.9993 20C17.9993 19.4376 17.8066 18.9637 17.4211 18.5782C17.0357 18.1927 16.5617 18 15.9993 18C15.4369 18 14.963 18.1927 14.5775 18.5782C14.1921 18.9637 13.9993 19.4376 13.9993 20C13.9993 20.5624 14.1921 21.0363 14.5775 21.4218C14.963 21.8073 15.4369 22 15.9993 22ZM11.9993 12H19.9993V9.33333C19.9993 8.22222 19.6105 7.27778 18.8327 6.5C18.0549 5.72222 17.1105 5.33333 15.9993 5.33333C14.8882 5.33333 13.9438 5.72222 13.166 6.5C12.3882 7.27778 11.9993 8.22222 11.9993 9.33333V12Z"
+                                fill="#797979" />
+                        </svg>
+                    </div>
+                    <p class="text-xs sm:text-lg">Secure payment</p>
+                </div>
+            </header>
+            <main
+                class="px-4 md:px-16 py-10 md:py-[88px] bg-[#F8F8F8]">
+                <section
+                    class="-mx-4 flex flex-wrap lg:flex-nowrap justify-between">
+                    <!-- payment form section start -->
+                    <section class="w-full max-w-[892px] px-4 mb-8 lg:mb-0">
+                        <div class="mb-12 sm:mb-[88px]">
+                            <h3 class="text-lg sm:text-3xl mb-4">1. Billing
+                                details</h3>
+                            <div class="text-sm sm:text-lg font-medium mb-8">
+                                <span>Έχετε ήδη λογαρισμό; </span>
+                                <a href="#" class="text-[#769D9F] underline">Συνδεθείτε
+                                    εδώ</a>
+                            </div>
+                            <form>
+                                <div class="-mx-3 md:flex flex-wrap mb-6">
+                                    <div class="md:w-1/2 px-3 mb-3 sm:mb-10">
+                                        <label
+                                            class="text-[#8E8E8E] text-base mb-2"
+                                            for="name">
+                                            Όνομα*
+                                        </label>
+                                        <input
+                                            class="w-full px-3 py-2 bg-white text-base text-black border border-[#DCDCDC] rounded"
+                                            id="name" type="text"
+                                            placeholder>
+                                    </div>
+                                    <div class="md:w-1/2 px-3 mb-3 sm:mb-10">
+                                        <label
+                                            class="text-[#8E8E8E] text-base mb-2"
+                                            for="adjective">
+                                            Επίθετο*
+                                        </label>
+                                        <input
+                                            class="w-full px-3 py-2 bg-white text-base text-black border border-[#DCDCDC] rounded"
+                                            id="adjective" type="text"
+                                            placeholder>
+                                    </div>
+                                    <div class="w-full px-3 mb-3 sm:mb-10">
+                                        <label
+                                            class="text-[#8E8E8E] text-base mb-2"
+                                            for="email">
+                                            Email*
+                                        </label>
+                                        <input
+                                            class="w-full px-3 py-2 bg-white text-base text-black border border-[#DCDCDC] rounded"
+                                            id="email" type="email"
+                                            placeholder>
+                                    </div>
+                                    <div class="w-full px-3 mb-3 sm:mb-10">
+                                        <label
+                                            class="text-[#8E8E8E] text-base mb-2"
+                                            for="mobile">
+                                            Κινητό
+                                        </label>
+                                        <input
+                                            class="w-full px-3 py-2 bg-white text-base text-black border border-[#DCDCDC] rounded"
+                                            id="mobile" type="text"
+                                            placeholder>
+                                    </div>
+                                    <div class="w-full px-3 mb-3 sm:mb-10">
+                                        <label
+                                            class="text-[#8E8E8E] text-base mb-2"
+                                            for="country">
+                                            Χώρα / Περιοχή*
+                                        </label>
+                                        <input
+                                            class="w-full px-3 py-2 bg-white text-base text-black border border-[#DCDCDC] rounded"
+                                            id="country" type="text"
+                                            placeholder>
+                                    </div>
+                                    <div class="w-full px-3 mb-3 sm:mb-10">
+                                        <label
+                                            class="text-[#8E8E8E] text-base mb-2"
+                                            for="city">
+                                            Πόλη*
+                                        </label>
+                                        <input
+                                            class="w-full px-3 py-2 bg-white text-base text-black border border-[#DCDCDC] rounded"
+                                            id="city" type="text"
+                                            placeholder>
+                                    </div>
+                                    <div class="md:w-1/2 px-3 mb-3 sm:mb-10">
+                                        <label
+                                            class="text-[#8E8E8E] text-base mb-2"
+                                            for="street">
+                                            Οδός*
+                                        </label>
+                                        <input
+                                            class="w-full px-3 py-2 bg-white text-base text-black border border-[#DCDCDC] rounded"
+                                            id="street" type="text"
+                                            placeholder>
+                                    </div>
+                                    <div class="md:w-1/4 px-3 mb-3 sm:mb-10">
+                                        <label
+                                            class="text-[#8E8E8E] text-base mb-2"
+                                            for="number">
+                                            Αριθμός*
+                                        </label>
+                                        <input
+                                            class="w-full px-3 py-2 bg-white text-base text-black border border-[#DCDCDC] rounded"
+                                            id="number" type="text"
+                                            placeholder>
+                                    </div>
+                                    <div class="md:w-1/4 px-3 mb-3 sm:mb-10">
+                                        <label
+                                            class="text-[#8E8E8E] text-base mb-2"
+                                            for="pc">
+                                            Τ.Κ.*
+                                        </label>
+                                        <input
+                                            class="w-full px-3 py-2 bg-white text-base text-black border border-[#DCDCDC] rounded"
+                                            id="pc" type="text"
+                                            placeholder>
+                                    </div>
+                                    <div class="w-full px-3">
+                                        <input
+                                            class="bg-white border border-[#DCDCDC] mr-1 rounded"
+                                            id="create-account-checkbox"
+                                            type="checkbox"
+                                            placeholder>
+                                        <label
+                                            class="text-[#8E8E8E] text-xs sm:text-base"
+                                            for="create-account-checkbox">
+                                            Δημιουργία λογαριασμού με τα
+                                            παραπάνω
+                                            στοιχεία
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="mb-12 sm:mb-[88px]">
+                            <h3 class="text-lg sm:text-3xl mb-4">2. Τρόπος
+                                αποστολής</h3>
+                            <div>
+                                <div class="mb-6">
+                                    <div class="mb-1">
+                                        <input id="shipping-method1"
+                                            class="mr-2 hidden" type="radio"
+                                            name="manner" checked />
+                                        <label
+                                            class="text-[14px] sm:text-[22px]"
+                                            for="shipping-method1">
+                                            <span
+                                                class="w-4 h-4 inline-block mr-1 rounded-full border border-black"></span>
+                                            Shipping method 1 : 3.00€
+                                        </label>
+                                    </div>
+                                    <p
+                                        class="text-xs sm:text-base text-[#8E8E8E] ml-6">Tue,Sep
+                                        12 - Thu,Sep 14</p>
+                                </div>
+                                <div>
+                                    <div class="mb-1">
+                                        <input id="shipping-method2"
+                                            class="mr-2 hidden" type="radio"
+                                            name="manner" />
+                                        <label
+                                            class="text-[14px] sm:text-[22px]"
+                                            for="shipping-method2">
+                                            <span
+                                                class="w-4 h-4 inline-block mr-1 rounded-full border border-black"></span>
+                                            Shipping method 1 : 3.00€
+                                        </label>
+                                    </div>
+                                    <p
+                                        class="text-xs sm:text-base text-[#8E8E8E] ml-6">Tue,Sep
+                                        12 - Thu,Sep 14</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="mb-12 sm:mb-[88px]">
+                            <h3 class="text-lg sm:text-3xl mb-4">3. Τρόπος
+                                πληρωμής</h3>
+                            <div>
+                                <div class="mb-6">
+                                    <div class="mb-1">
+                                        <input id="credit-card"
+                                            class="mr-2 hidden" type="radio"
+                                            name="payment-method" checked />
+                                        <label
+                                            class="text-[14px] sm:text-[22px]"
+                                            for="credit-card">
+                                            <span
+                                                class="w-4 h-4 inline-block mr-1 rounded-full border border-black"></span>
+                                            Πιστωτική / Χρεωστική κάρτα
+                                        </label>
+                                    </div>
+                                    <div class="ml-6">
+                                        <img class="mb-4" width="130px"
+                                            src="assets/images/payment.png" alt />
+                                        <p
+                                            class="text-xs sm:text-base text-[#8E8E8E]">Lorem
+                                            ipsum dolor sit amet.</p>
+                                    </div>
+
+                                </div>
+                                <div class="mb-6">
+                                    <div class="mb-1">
+                                        <input id="cash-on-delivery"
+                                            class="mr-2 hidden" type="radio"
+                                            name="payment-method" />
+                                        <label
+                                            class="text-[14px] sm:text-[22px]"
+                                            for="cash-on-delivery">
+                                            <span
+                                                class="w-4 h-4 inline-block mr-1 rounded-full border border-black"></span>
+                                            Αντικαταβολή : 4.00€
+                                        </label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="mb-1">
+                                        <input id="bank"
+                                            class="mr-2 hidden" type="radio"
+                                            name="payment-method" />
+                                        <label
+                                            class="text-[14px] sm:text-[22px]"
+                                            for="bank">
+                                            <span
+                                                class="w-4 h-4 inline-block mr-1 rounded-full border border-black"></span>
+                                            Κατάθεση σε τραπεζικό λογαριασμό
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg sm:text-3xl mb-4">4. Λεπτομέρειες
+                                αποστολής</h3>
+                            <div class="w-full px-3 mb-3 sm:mb-8">
+                                <input
+                                    class="bg-white border border-[#DCDCDC] mr-1 rounded"
+                                    id="create-account-checkbox" type="checkbox"
+                                    placeholder>
+                                <label
+                                    class="text-[#8E8E8E] text-xs sm:text-base"
+                                    for="create-account-checkbox">
+                                    Αποστολή σε διαφορετική διεύθυνση;
+                                </label>
+                            </div>
+                            <div class="w-full px-3">
+                                <label class="text-[#8E8E8E] text-base mb-2"
+                                    for="order-note">
+                                    Σημειώσεις παραγγελίας (προαιρετικό)
+                                </label>
+                                <textarea
+                                    class="w-full px-3 py-2 bg-white text-base text-black border border-[#DCDCDC] rounded"
+                                    id="order-note" rows="4" placeholder></textarea>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- payment for section end -->
+
+                    <!-- order form section start -->
+                    <section
+                        class="w-full max-w-[628px] px-4">
+                        <div class="bg-white shadow-lg px-8 md:px-12 pt-6 pb-12">
+                            <h3 class="text-lg sm:text-3xl mb-6 sm:mb-9">1.
+                                Billing details</h3>
+                            <h5 class="text-sm sm:text-[22px] mb-6">2 PRODUCTS</h5>
+                            <div class="mb-10">
+                                <div class="flex mb-6">
+                                    <div class="mr-4 w-[110px]">
+                                        <img
+                                            src="assets/images/gallery_img7.png" />
+                                    </div>
+                                    <div class="text-sm sm:text-lg">
+                                        <p class="mb-2">AFRICA LADIES ΦΟΥΣΤΑ<br />
+                                            ΦΑΚΕΛΟΣ ΜΕ ΤΟΠ, M/L</p>
+                                        <p class="mb-2">23.00 €</p>
+                                        <p class="mb-2">QTY : 1</p>
+                                    </div>
+                                </div>
+                                <div class="flex mb-6">
+                                    <div class="mr-4 w-[110px]">
+                                        <img
+                                            src="assets/images/gallery_img7.png" />
+                                    </div>
+                                    <div class="text-sm sm:text-lg">
+                                        <p class="mb-2">AFRICA LADIES ΦΟΥΣΤΑ<br />
+                                            ΦΑΚΕΛΟΣ ΜΕ ΤΟΠ, M/L</p>
+                                        <p class="mb-2">23.00 €</p>
+                                        <p class="mb-2">QTY : 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="mb-6">
+                                <li
+                                    class="flex justify-between py-6 border-t-2 border-[#C5C5C5]">
+                                    <p class="text-2xl">SUBTOTAL</p>
+                                    <p class="text-[22px]">46.00 €</p>
+                                </li>
+                                <li
+                                    class="flex justify-between py-6 border-t-2 border-[#C5C5C5]">
+                                    <p class="text-2xl">SHIPPING</p>
+                                    <p class="text-[22px]">Shipping method 1 :
+                                        3.00€
+                                        <br /><span class="text-lg text-[#222]">Tue,Sep
+                                            12 -
+                                            Thu,Sep 14</span></p>
+                                </li>
+                                <li
+                                    class="flex justify-between py-6 border-t-2 border-[#C5C5C5]">
+                                    <p class="text-2xl font-bold">TOTAL</p>
+                                    <p class="text-2xl font-bold">49.00 €</p>
+                                </li>
+                                <li class="py-6 border-t-2 border-[#C5C5C5]">
+                                    <p class="text-2xl mb-6">Κουπόνι</p>
+                                    <div class="flex">
+                                        <div class="w-2/3 pr-2">
+                                            <input
+                                                class="w-full px-3 py-2 bg-white text-base text-black border border-[#DCDCDC]"
+                                                id="adjective" type="text"
+                                                placeholder="Coupon code">
+                                        </div>
+                                        <div class="w-1/3">
+                                            <button
+                                                class="w-full h-full bg-[#769D9F] text-base font-bold text-white">Χρήση
+                                                κουπονιού</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li
+                                    class="py-6 border-t border-[#C5C5C5]">
+                                    <p class="text-base text-[#8E8E8E">
+                                        <span>Your personal data will be used to
+                                            process
+                                            your order, support your experience
+                                            throughout this website, and for
+                                            other
+                                            purposes described in our <a
+                                                class="text-[#769D9F] font-bold"
+                                                href="#">privacy
+                                                policy</a>.</span>
+                                    </p>
+                                </li>
+                                <li
+                                    class="py-6 border-t border-[#C5C5C5]">
+                                    <div class="w-full">
+                                        <input
+                                            class="bg-white border border-[#DCDCDC] mr-1 rounded"
+                                            id="terms"
+                                            type="checkbox" placeholder>
+                                        <label
+                                            class="text-base text-[#8E8E8E]"
+                                            for="terms">
+                                            I have read and agree to the website
+                                            <a class="text-[#769D9F] font-bold"
+                                                href="#">terms and conditions</a>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <button
+                                class="w-full h-full py-4 bg-[#769D9F] text-base font-bold text-white">Ολοκλήρωση
+                                αγοράς</button>
+                        </div>
+
+                    </section>
+                    <!-- order form section end -->
+                </section>
+            </main>
+            <!-- footer start -->
+            <footer class="pt-[77px] pb-[50px] bg-[#769D9F] px-6">
+                <div class="w-full max-w-[1700px] mx-auto">
+                    <div class="mb-8 sm:mb-20">
+                        <img src="./assets/images/logo_footer.svg" alt />
+                    </div>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md gap-0 md:gap-4 mb-6 md:mb-28">
+                        <div class="mb-11 md:mb-4">
+                            <div class="max-w-[295px]">
+                                <p
+                                    class="text-white text-sm tracking-[0.4px] mb-4">Subscribe
+                                    to our newsletter and get 10%
+                                    off with your first order</p>
+                                <form id="email-form">
+                                    <div class="relative w-full">
+                                        <input type="email"
+                                            class="w-full placeholder-black bg-white py-3 pl-4 pr-11 text-sm tracking-[0.4px]"
+                                            placeholder="Enter your email" />
+                                        <img
+                                            class="absolute right-4 top-1/2 translate-y-[-50%]"
+                                            src="assets/images/mail.svg" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="mb-0 md:mb-4">
+                            <div
+                                class="accordion-about-list relative bg-transparent block md:hidden">
+                                <input type="checkbox" id="about-toggle"
+                                    class="toggle hidden" />
+                                <label
+                                    class="title flex bg-transparent cursor-pointer justify-between items-center mb-5"
+                                    for="about-toggle">
+                                    <h5
+                                        class="text-base font-medium sm:font-semibold text-white">ΣΧΕΤΙΚΑ
+                                        ΜΕ ΕΜΑΣ</h5>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16" viewBox="0 0 12 7"
+                                        fill="none">
+                                        <path
+                                            d="M6.00039 6.50039L0.900391 1.40039L1.40039 0.900391L6.00039 5.50039L10.6004 0.900391L11.1004 1.40039L6.00039 6.50039Z"
+                                            fill="white" />
+                                    </svg>
+                                </label>
+                                <ul
+                                    class="content bg-transparent overflow-hidden">
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Όροι και
+                                            Προυποθέσεις</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Πολιτική Απορρήτου</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Επιλογές πληρωμής</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Πολιτική επιστροφών
+                                            και
+                                            ανταλλαγής</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hidden md:block">
+                                <h5
+                                    class="text-base font-medium sm:font-semibold text-white mb-8">ΣΧΕΤΙΚΑ
+                                    ΜΕ ΕΜΑΣ</h5>
+                                <ul>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Όροι και Προυποθέσεις</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Πολιτική Απορρήτου</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Επιλογές πληρωμής</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Πολιτική επιστροφών και
+                                            ανταλλαγής</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="mb-0 md:mb-4">
+                            <div
+                                class="accordion-about-list relative bg-transparent block md:hidden">
+                                <input type="checkbox" id="service-toggle"
+                                    class="toggle hidden" />
+                                <label
+                                    class="title flex bg-transparent cursor-pointer justify-between items-center mb-5"
+                                    for="service-toggle">
+                                    <h5
+                                        class="text-base font-medium sm:font-semibold text-white uppercase">Εξυπηρετηση
+                                        πελατων</h5>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16" viewBox="0 0 12 7"
+                                        fill="none">
+                                        <path
+                                            d="M6.00039 6.50039L0.900391 1.40039L1.40039 0.900391L6.00039 5.50039L10.6004 0.900391L11.1004 1.40039L6.00039 6.50039Z"
+                                            fill="white" />
+                                    </svg>
+                                </label>
+                                <ul
+                                    class="content bg-transparent overflow-hidden">
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Όροι και
+                                            Προυποθέσεις</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Πολιτική Απορρήτου</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Επιλογές πληρωμής</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Πολιτική επιστροφών
+                                            και
+                                            ανταλλαγής</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="hidden md:block">
+                                <h5
+                                    class="text-base font-medium sm:font-semibold text-white mb-8 uppercase">Εξυπηρετηση
+                                    πελατων</h5>
+                                <ul>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Μεθοδολόγιο</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Συχνές ερωτήσεις</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Ο λογαριασμός μου</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Παρακολούθηση
+                                            παραγγελίας</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mb-10">
+                                <div
+                                    class="accordion-about-list relative bg-transparent block md:hidden">
+                                    <input type="checkbox"
+                                        id="social-toggle"
+                                        class="toggle hidden" />
+                                    <label
+                                        class="title flex bg-transparent cursor-pointer justify-between items-center mb-5"
+                                        for="social-toggle">
+                                        <h5
+                                            class="text-base font-medium sm:font-semibold text-white uppercase">SOCIAL</h5>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16" viewBox="0 0 12 7"
+                                            fill="none">
+                                            <path
+                                                d="M6.00039 6.50039L0.900391 1.40039L1.40039 0.900391L6.00039 5.50039L10.6004 0.900391L11.1004 1.40039L6.00039 6.50039Z"
+                                                fill="white" />
+                                        </svg>
+                                    </label>
+                                    <ul
+                                        class="content bg-transparent overflow-hidden">
+                                        <li class="flex">
+                                            <a href="#" class="mr-3"><img
+                                                    src="assets/images/instagram.svg" /></a>
+                                            <a href="#"><img
+                                                    src="assets/images/facebook.svg" /></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="hidden md:block">
+                                    <h5
+                                        class="text-base font-medium sm:font-semibold text-white mb-8">SOCIAL</h5>
+                                    <ul>
+                                        <li class="flex">
+                                            <a href="#" class="mr-3"><img
+                                                    src="assets/images/instagram.svg" /></a>
+                                            <a href="#"><img
+                                                    src="assets/images/facebook.svg" /></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <h5
+                                    class="text-base font-medium sm:font-semibold text-white mb-8 hidden md:block">PAYMENT
+                                    METHODS</h5>
+                                <div
+                                    class="flex justify-center md:justify-start">
+                                    <img src="assets/images/payment.png" alt />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-[15px] text-white">© Copyright 2023
+                            Ioulia Vasilaki</p>
+                    </div>
+                </div>
+
+            </footer>
+            <!-- footer end -->
+        </section>
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    </body>
+</html>

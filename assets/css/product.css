@@ -1,0 +1,121 @@
+.swiper-slide>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gallery-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.gallery-main {
+    width: calc(100% - 163px);
+    height: 100%;
+    border: 1px solid #e9e9e9;
+}
+
+.gallery-main .swiper-button-prev,
+.gallery-main .swiper-button-next {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    background: #769D9F;
+    ;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gallery-main .swiper-button-prev {
+    left: 8px;
+}
+
+.gallery-main .swiper-button-next {
+    right: 8px;
+}
+
+.gallery-main .swiper-button-prev::after,
+.gallery-main .swiper-button-next::after {
+    font-size: 20px;
+}
+
+.gallery-thumbs {
+    order: -1;
+    width: 163px;
+    height: 100vh;
+    margin-right: 15px;
+}
+
+.gallery-thumbs .swiper-wrapper {
+    margin-top: -4px;
+    margin-bottom: -4px;
+}
+
+.gallery-thumbs .swiper-slide {
+    overflow: hidden;
+}
+
+.gallery-thumbs .swiper-slide img {
+    transition: 0.3s;
+}
+
+.gallery-thumbs .swiper-slide-active {
+    opacity: 0.9;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+/* .gallery-thumbs .swiper-slide-thumb-active img {
+  
+} */
+.product-page input.product-size:checked+label{
+    color: #fff;
+    background-color: #769D9F;
+}
+.description-section{
+    height: 583px;
+}
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        right: -50%;
+    }
+}
+@media screen and (max-width:1650px) {
+    .description-section{
+        height: 500px;
+    }
+}
+@media screen and (max-width:1500px) {
+    .description-section{
+        height: 450px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .description-section{
+        height: 400px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .description-section{
+        height: 320px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .description-section{
+        height: auto;
+    }
+}
+@media screen and (max-width:768px) {
+    .gallery-main {
+        width: 100%;
+    }
+}

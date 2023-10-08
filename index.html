@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Loulia</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/index.css" />
+    </head>
+    <body>
+        <section class="max-w-[1920px] mx-auto">
+            <div class="text-center bg-[#7CACAE] py-3">
+                <p class="text-lg font-medium text-white">Για αγορές άνω των 50€
+                    δωρεάν μεταφορίκα</p>
+            </div>
+            <header class="px-0 md:px-8 lg:px-11">
+                <div class="justify-between pt-[42px] hidden md:flex">
+                    <a href="#" class="flex items-center">
+                        <img class="mr-1" src="assets/images/search_icon.svg"
+                            alt />
+                        <span class="text-lg">SEARCH</span>
+                    </a>
+                    <img class="max-w-[165px] md:max-w-[280px] lg:max-w-full"
+                        src="assets/images/logo.svg" alt />
+                    <div class="flex">
+                        <div class="relative inline-block px-3">
+                            <button
+                                class="language-dropdown-button text-lg font-light flex items-center">
+                                <span class="mr-1">GR</span>
+                                <svg width="12" height="8" viewBox="0 0 12 8"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6 7.075L0 1.075L1.075 0L6 4.95L10.925 0.025L12 1.1L6 7.075Z"
+                                        fill="black" />
+                                </svg>
+
+                            </button>
+                            <div
+                                class="language-dropdown absolute right-0 z-10 mt-2 w-30 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical"
+                                aria-labelledby="menu-button" tabindex="-1">
+                                <div class="py-1" role="none">
+                                    <a href="#"
+                                        class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-sm"
+                                        role="menuitem" tabindex="-1"
+                                        id="menu-item-0">English</a>
+                                    <a href="#"
+                                        class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-sm"
+                                        role="menuitem" tabindex="-1"
+                                        id="menu-item-0">Germany</a>
+                                    <a href="#"
+                                        class="text-gray-700 hover:bg-gray-100 block px-4 py-2 text-sm"
+                                        role="menuitem" tabindex="-1"
+                                        id="menu-item-0">French</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <ul
+                                class="flex items-center pl-2 border-l border-black">
+                                <li class="mx-3">
+                                    <a href="#"><img
+                                            src="assets/images/user_icon.svg"
+                                            alt /></a>
+                                </li>
+                                <li class="mx-3">
+                                    <a href="#"><img
+                                            src="assets/images/favourite_icon.svg"
+                                            alt /></a>
+                                </li>
+                                <li class="mx-3">
+                                    <a href="#"><img
+                                            src="assets/images/cart_icon.svg"
+                                            alt /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <nav
+                    class="nav flex flex-wrap items-center justify-between px-4 md:px-8 py-6">
+                    <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+                    <label
+                        class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none"
+                        for="menu-btn">
+                        <span
+                            class="navicon bg-grey-darkest flex items-center relative"></span>
+                    </label>
+                    <img class="max-w-[165px] block md:hidden"
+                        src="assets/images/logo.svg" alt />
+                    <div class="flex items-center block md:hidden">
+                        <a href="#" class="mr-4">
+                            <img
+                                src="assets/images/search_icon.svg"
+                                alt />
+                        </a>
+                        <a href="#">
+                            <img
+                                src="assets/images/cart_icon.svg"
+                                alt />
+                        </a>
+                    </div>
+                    <ul
+                        class="menu flex justify-center list-reset m-0 w-full md:w-auto mx-auto">
+                        <li>
+                            <a href="/"
+                                class="block md:inline-block px-4 lg:px-8 py-3 text-lg hover:text-[#769D9F]">SHOP</a>
+                        </li>
+                        <li class="border-t md:border-none">
+                            <a href="/"
+                                class="block md:inline-block px-4 lg:px-8 py-3 text-lg hover:text-[#769D9F]">NEW
+                                IN</a>
+                        </li>
+                        <li class="border-t md:border-none">
+                            <a href="/"
+                                class="block md:inline-block px-4 lg:px-8 py-3 text-lg hover:text-[#769D9F]">SALES</a>
+                        </li>
+                        <li class="border-t md:border-none">
+                            <a href="/"
+                                class="block md:inline-block px-4 lg:px-8 py-3 text-lg hover:text-[#769D9F]">COLLECTIONS</a>
+                        </li>
+                        <li class="border-t md:border-none">
+                            <a href="/"
+                                class="block md:inline-block px-4 lg:px-8 py-3 text-lg hover:text-[#769D9F]">ABOUT
+                                US</a>
+                        </li>
+                        <li class="border-t md:border-none">
+                            <a href="/"
+                                class="block md:inline-block px-4 lg:px-8 py-3 text-lg hover:text-[#769D9F]">GIFTCARD</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <!-- hero section start -->
+                <section class="hero-section h-[859px] relative mb-4">
+                    <div
+                        class="absolute start-0 bottom-[5%] sm:bottom-[27%]  w-full text-center">
+                        <h1
+                            class="text-xl sm:text-[64px] sm:leading-[72px] text-white font-medium tracking-[1.33px] mb-6">KIMONO
+                            JUNGLE PARADISE</h1>
+                        <button type="button"
+                            class="w-[129px] sm:w-[344px] h-[37px] sm:h-[77px] bg-white text-[#769D9F] text-lg font-bold">SHOP
+                            NOW</button>
+                    </div>
+                </section>
+                <!-- hero section end -->
+
+                <!-- products gallery section start -->
+                <section class="mb-12">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="./assets/images/gallery_img1.png" alt />
+                            <div
+                                class="absolute start-0 bottom-0 pt-20 pb-16 pl-8 w-full bg-black-radial">
+                                <h3
+                                    class="font-sm text-white tracking-[4px] mb-2.5">Winter
+                                    2023</h3>
+                                <h2
+                                    class="text-white font-medium tracking-[1.53px] text-3xl mb-3.5">FALL
+                                    WINTER 2023</h2>
+                                <button
+                                    class="bg-[#87B2B4] w-[140px] h-[40px] font-bold text-[13px] text-white tracking-[3.9px]">SHOP
+                                    THIS</button>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img class="w-full"
+                                src="./assets/images/gallery_img2.png" alt />
+                            <div
+                                class="absolute right-0 top-0 py-6 pr-8 w-full bg-black-radial text-right">
+                                <h2
+                                    class="text-white font-medium tracking-[1.53px] text-3xl mb-3.5">Best
+                                    Sellers</h2>
+                                <button
+                                    class="bg-white w-[140px] h-[40px] font-bold text-[13px] text-[#769D9F] tracking-[3.9px]">SHOP
+                                    THIS</button>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img class="w-full"
+                                src="./assets/images/gallery_img3.png" alt />
+                            <div
+                                class="absolute start-4 bottom-6 p-8 bg-white">
+                                <p
+                                    class="tracking-[3.6px] text-xs uppercase mb-3">Maxi
+                                    Φορεματα</p>
+                                <h2
+                                    class="text-[27px] text-black font-medium tracking-[1.36px] text-3xl mb-3">NOW
+                                    -30%</h2>
+                                <p class="tracking-[0.4px] text-xs mb-3">Περιορισμένα
+                                    κομμάτια</p>
+                                <button
+                                    class="bg-[#87B2B4] w-[140px] h-[40px] font-bold text-[13px] text-white tracking-[3.9px]">SHOP
+                                    THIS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="./assets/images/gallery_img4.png" alt />
+                            <div
+                                class="absolute start-0 bottom-0 pt-20 pb-8 sm:pb-16 pl-8 w-full bg-black-radial">
+                                <h3
+                                    class="font-sm text-white tracking-[4px] mb-2.5">Winter
+                                    2023</h3>
+                                <h2
+                                    class="text-white font-medium tracking-[1.53px] text-[24px] sm:text-3xl mb-3.5">FALL
+                                    WINTER 2023</h2>
+                                <button
+                                    class="bg-[#87B2B4] w-[140px] h-[40px] font-bold text-[13px] text-white tracking-[3.9px]">SHOP
+                                    THIS</button>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img class="w-full"
+                                src="./assets/images/gallery_img5.png" alt />
+                            <div
+                                class="absolute left-[auto] lg:left-1/2 right-4 lg:right-auto bottom-6 translate-x-0 lg:translate-x-[-50%] p-4 lg:p-8 bg-white">
+                                <p
+                                    class="tracking-[3.6px] text-xs uppercase mb-3">Maxi
+                                    Φορεματα</p>
+                                <h2
+                                    class="text-[20px] sm:text-[27px] text-black font-medium tracking-[1.36px] text-3xl mb-3">NOW
+                                    -30%</h2>
+                                <p
+                                    class="tracking-[0.4px] text-xs mb-3 hidden lg:block">Περιορισμένα
+                                    κομμάτια</p>
+                                <button
+                                    class="bg-[#87B2B4] w-[140px] h-[40px] font-bold text-[13px] text-white tracking-[3.9px]">SHOP
+                                    THIS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper product-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="relative mb-4">
+                                    <img class="w-full"
+                                        src="./assets/images/gallery_img6.png" />
+                                    <div
+                                        class="absolute start-0 bottom-6 px-3 w-full text-center">
+                                        <button
+                                            class="bg-[#87B2B4] w-full max-w-[344px] h-[72px] font-bold text-[13px] text-white tracking-[3.9px]">Αγορά</button>
+                                    </div>
+                                    <button
+                                        class="absolute right-10 top-10 w-10 h-10 rounded-full bg-white flex justify-center items-center">
+                                        <svg width="24" height="23"
+                                            viewBox="0 0 24 23"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 22.2051L10.9897 21.2923C8.81367 19.3043 7.01367 17.6026 5.58973 16.1872C4.1658 14.7718 3.04187 13.5235 2.21793 12.4423C1.394 11.3611 0.818367 10.3829 0.491033 9.5077C0.163678 8.63248 0 7.75213 0 6.86667C0 5.17093 0.576066 3.747 1.7282 2.59487C2.88033 1.44273 4.30427 0.866667 6 0.866667C7.17264 0.866667 8.27264 1.16667 9.3 1.76667C10.3274 2.36667 11.2274 3.23931 12 4.3846C12.7726 3.23931 13.6726 2.36667 14.7 1.76667C15.7274 1.16667 16.8274 0.866667 18 0.866667C19.6957 0.866667 21.1197 1.44273 22.2718 2.59487C23.4239 3.747 24 5.17093 24 6.86667C24 7.75213 23.8363 8.63248 23.509 9.5077C23.1816 10.3829 22.606 11.3611 21.7821 12.4423C20.9581 13.5235 19.8385 14.7718 18.4231 16.1872C17.0077 17.6026 15.2034 19.3043 13.0103 21.2923L12 22.2051ZM12 20.4C14.1333 18.4718 15.8889 16.8201 17.2667 15.4449C18.6444 14.0697 19.7333 12.8765 20.5333 11.8654C21.3333 10.8543 21.8889 9.95856 22.2 9.1782C22.5111 8.39787 22.6667 7.62736 22.6667 6.86667C22.6667 5.53333 22.2222 4.42222 21.3333 3.53333C20.4444 2.64444 19.3333 2.2 18 2.2C16.9385 2.2 15.959 2.50299 15.0615 3.10897C14.1641 3.71494 13.3607 4.62735 12.6513 5.84617H11.3487C10.6222 4.61026 9.81452 3.69359 8.92563 3.09617C8.03675 2.49872 7.06153 2.2 6 2.2C4.68376 2.2 3.57692 2.64444 2.6795 3.53333C1.78206 4.42222 1.33333 5.53333 1.33333 6.86667C1.33333 7.62736 1.48889 8.39787 1.8 9.1782C2.11111 9.95856 2.66667 10.8543 3.46667 11.8654C4.26667 12.8765 5.35556 14.0654 6.73333 15.4321C8.11111 16.7987 9.86667 18.4547 12 20.4Z"
+                                                fill="#769D9F" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+
+                                <div class="text-center">
+                                    <p class="text-base">AFRICA LADIES FLOWERS</p>
+                                    <p><span class="mr-3 text-[13px]">€75,00</span><span
+                                            class="line-through"> €149,00</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="relative mb-4">
+                                    <img class="w-full"
+                                        src="./assets/images/gallery_img7.png"
+                                        alt />
+                                    <button
+                                        class="absolute start-[26px] top-8 bg-white w-[122px] h-[32px] font-bold text-[13px] text-black tracking-[3.9px]">SALE!</button>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-base">AFRICA LADIES FLOWERS</p>
+                                    <p><span class="mr-3 text-[13px]">€75,00</span><span
+                                            class="line-through"> €149,00</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="relative mb-4">
+                                    <img class="w-full"
+                                        src="./assets/images/gallery_img8.png"
+                                        alt />
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-base">AFRICA LADIES FLOWERS</p>
+                                    <p><span class="mr-3 text-[13px]">€75,00</span><span
+                                            class="line-through"> €149,00</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="relative mb-4">
+                                    <img class="w-full"
+                                        src="./assets/images/gallery_img9.png" />
+                                    <button
+                                        class="absolute start-[26px] top-8 bg-white w-[122px] h-[32px] font-bold text-[13px] text-black tracking-[3.9px]">SALE!</button>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-base">AFRICA LADIES FLOWERS</p>
+                                    <p><span class="mr-3 text-[13px]">€75,00</span><span
+                                            class="line-through"> €149,00</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="relative mb-4">
+                                    <img class="w-full"
+                                        src="./assets/images/gallery_img7.png"
+                                        alt />
+                                    <button
+                                        class="absolute start-[26px] top-8 bg-white w-[122px] h-[32px] font-bold text-[13px] text-black tracking-[3.9px]">SALE!</button>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-base">AFRICA LADIES FLOWERS</p>
+                                    <p><span class="mr-3 text-[13px]">€75,00</span><span
+                                            class="line-through"> €149,00</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- products gallery section end -->
+
+                <!-- subscribe section start -->
+                <section
+                    class="subscribe-section mb-14">
+                    <div
+                        class="h-[359px] sm:h-[442px] flex items-center pl-4 sm:pl-20">
+                        <div>
+                            <p class="text-sm sm:text-base text-white">Lorem
+                                ipsum</p>
+                            <h2
+                                class="text-[20px] sm:text-[50px] text-white mb-[14px] sm:mb-[29px]">Lorem
+                                ipsum dolor</h2>
+                            <div class="max-w-[270px] sm:max-w-[505px]">
+                                <p class="text-xs sm:text-sm text-white">Lorem
+                                    ipsum
+                                    dolor
+                                    sit amet consectetur. Mus
+                                    maecenas
+                                    facilisis enim arcu blandit ac vel ultrices.
+                                    Praesent viverra netus faucibus id vitae.
+                                    Massa
+                                    quam
+                                    morbi elit ipsum sollicitudin.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="py-[75px] bg-[#AE9A9A] flex items-center justify-center text-center">
+                        <div>
+                            <h3
+                                class="text-[18px] font-medium sm:text-[27px] text-black  tracking-[1.33px] mb-4">Get
+                                -10% for your first order!</h3>
+                            <p class="text-base mb-4">Subscribe to our
+                                newsletter and
+                                enjoy exclusive
+                                offers</p>
+                            <form id="subscribe-form" class="flex">
+                                <div class="flex mx-auto">
+                                    <input type="email"
+                                        class="text-base tracking-[0.4px] px-2.5 py-3 border border-[#E8E8E1] w-[190px] sm:w-[254px] bg-transparent placeholder-black"
+                                        placeholder="Enter your email">
+                                    <button type="submit"
+                                        class="bg-black px-[21px] py-3 text-white text-[13px] tracking-[3.9px]">SUBSCRIBE</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- subscribe section end -->
+
+                <!-- follow slide section start -->
+                <section class="mb-8">
+                    <div class="text-center mb-8">
+                        <p class="text-sm sm:text-xl tracking-[2px]">FOLLOW@IOULIA_VASILAKI
+                            ON
+                            INSTAGRAM</p>
+                    </div>
+                    <div class="swiper follow-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide relative">
+                                <img src="assets/images/follow_slide1.png" alt />
+                                <div
+                                    class="absolute inset-0">
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/instagram_icon.svg" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide relative">
+                                <img src="assets/images/follow_slide2.png" alt />
+                                <div
+                                    class="absolute inset-0">
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/instagram_icon.svg" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide relative">
+                                <img src="assets/images/follow_slide3.png" alt />
+                                <div
+                                    class="absolute inset-0">
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/instagram_icon.svg" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide relative">
+                                <img src="assets/images/follow_slide4.png" alt />
+                                <div
+                                    class="absolute inset-0">
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/instagram_icon.svg"
+                                            alt />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide relative">
+                                <img src="assets/images/follow_slide5.png" alt />
+                                <div
+                                    class="absolute inset-0">
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/instagram_icon.svg" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide relative">
+                                <img src="assets/images/follow_slide1.png" />
+                                <div
+                                    class="absolute inset-0">
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/instagram_icon.svg"
+                                            alt />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- follow slide section end -->
+            </main>
+            <!-- footer start -->
+            <footer class="pt-[77px] pb-[50px] bg-[#769D9F] px-6">
+                <div class="w-full max-w-[1700px] mx-auto">
+                    <div class="mb-8 sm:mb-20">
+                        <img src="./assets/images/logo_footer.svg" alt />
+                    </div>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md gap-0 md:gap-4 mb-6 md:mb-28">
+                        <div class="mb-11 md:mb-4">
+                            <div class="max-w-[295px]">
+                                <p
+                                    class="text-white text-sm tracking-[0.4px] mb-4">Subscribe
+                                    to our newsletter and get 10%
+                                    off with your first order</p>
+                                <form id="email-form">
+                                    <div class="relative w-full">
+                                        <input type="email"
+                                            class="w-full placeholder-black bg-white py-3 pl-4 pr-11 text-sm tracking-[0.4px]"
+                                            placeholder="Enter your email" />
+                                        <img
+                                            class="absolute right-4 top-1/2 translate-y-[-50%]"
+                                            src="assets/images/mail.svg" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="mb-0 md:mb-4">
+                            <div
+                                class="accordion-about-list relative bg-transparent block md:hidden">
+                                <input type="checkbox" id="about-toggle"
+                                    class="toggle hidden" />
+                                <label
+                                    class="title flex bg-transparent cursor-pointer justify-between items-center mb-5"
+                                    for="about-toggle">
+                                    <h5
+                                        class="text-base font-medium sm:font-semibold text-white">ΣΧΕΤΙΚΑ
+                                        ΜΕ ΕΜΑΣ</h5>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16" viewBox="0 0 12 7"
+                                        fill="none">
+                                        <path
+                                            d="M6.00039 6.50039L0.900391 1.40039L1.40039 0.900391L6.00039 5.50039L10.6004 0.900391L11.1004 1.40039L6.00039 6.50039Z"
+                                            fill="white" />
+                                    </svg>
+                                </label>
+                                <ul
+                                    class="content bg-transparent overflow-hidden">
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Όροι και
+                                            Προυποθέσεις</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Πολιτική Απορρήτου</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Επιλογές πληρωμής</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Πολιτική επιστροφών
+                                            και
+                                            ανταλλαγής</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hidden md:block">
+                                <h5
+                                    class="text-base font-medium sm:font-semibold text-white mb-8">ΣΧΕΤΙΚΑ
+                                    ΜΕ ΕΜΑΣ</h5>
+                                <ul>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Όροι και Προυποθέσεις</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Πολιτική Απορρήτου</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Επιλογές πληρωμής</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Πολιτική επιστροφών και
+                                            ανταλλαγής</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="mb-0 md:mb-4">
+                            <div
+                                class="accordion-about-list relative bg-transparent block md:hidden">
+                                <input type="checkbox" id="service-toggle"
+                                    class="toggle hidden" />
+                                <label
+                                    class="title flex bg-transparent cursor-pointer justify-between items-center mb-5"
+                                    for="service-toggle">
+                                    <h5
+                                        class="text-base font-medium sm:font-semibold text-white uppercase">Εξυπηρετηση
+                                        πελατων</h5>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16" viewBox="0 0 12 7"
+                                        fill="none">
+                                        <path
+                                            d="M6.00039 6.50039L0.900391 1.40039L1.40039 0.900391L6.00039 5.50039L10.6004 0.900391L11.1004 1.40039L6.00039 6.50039Z"
+                                            fill="white" />
+                                    </svg>
+                                </label>
+                                <ul
+                                    class="content bg-transparent overflow-hidden">
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Όροι και
+                                            Προυποθέσεις</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Πολιτική Απορρήτου</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Επιλογές πληρωμής</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Πολιτική επιστροφών
+                                            και
+                                            ανταλλαγής</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="hidden md:block">
+                                <h5
+                                    class="text-base font-medium sm:font-semibold text-white mb-8 uppercase">Εξυπηρετηση
+                                    πελατων</h5>
+                                <ul>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Μεθοδολόγιο</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Συχνές ερωτήσεις</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Ο λογαριασμός μου</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="text-base font-normal sm:font-medium text-white"
+                                            href="#">Παρακολούθηση παραγγελίας</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mb-10">
+                                <div
+                                    class="accordion-about-list relative bg-transparent block md:hidden">
+                                    <input type="checkbox" id="social-toggle"
+                                        class="toggle hidden" />
+                                    <label
+                                        class="title flex bg-transparent cursor-pointer justify-between items-center mb-5"
+                                        for="social-toggle">
+                                        <h5
+                                            class="text-base font-medium sm:font-semibold text-white uppercase">SOCIAL</h5>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16" viewBox="0 0 12 7"
+                                            fill="none">
+                                            <path
+                                                d="M6.00039 6.50039L0.900391 1.40039L1.40039 0.900391L6.00039 5.50039L10.6004 0.900391L11.1004 1.40039L6.00039 6.50039Z"
+                                                fill="white" />
+                                        </svg>
+                                    </label>
+                                    <ul
+                                        class="content bg-transparent overflow-hidden">
+                                        <li class="flex">
+                                            <a href="#" class="mr-3"><img
+                                                    src="assets/images/instagram.svg" /></a>
+                                            <a href="#"><img
+                                                    src="assets/images/facebook.svg" /></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="hidden md:block">
+                                    <h5
+                                        class="text-base font-medium sm:font-semibold text-white mb-8">SOCIAL</h5>
+                                    <ul>
+                                        <li class="flex">
+                                            <a href="#" class="mr-3"><img
+                                                    src="assets/images/instagram.svg" /></a>
+                                            <a href="#"><img
+                                                    src="assets/images/facebook.svg" /></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <h5
+                                    class="text-base font-medium sm:font-semibold text-white mb-8 hidden md:block">PAYMENT
+                                    METHODS</h5>
+                                <div
+                                    class="flex justify-center md:justify-start">
+                                    <img src="assets/images/payment.png" alt />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-[15px] text-white">© Copyright 2023
+                            Ioulia Vasilaki</p>
+                    </div>
+                </div>
+
+            </footer>
+            <!-- footer end -->
+        </section>
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/index.js"></script>
+    </body>
+</html>
