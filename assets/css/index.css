@@ -21,6 +21,7 @@
 }
 @media screen and (max-width:640px) {
     .hero-section {
+        height: calc(100vh - 134px) !important;
         background-image: url("../images/hero_bg_mobile.png");
     }
 
